@@ -1,0 +1,21 @@
+pip install transformers==4.36.2
+pip install huggingface_hub==0.24.0
+
+from transformers import AutoTokenizer, Trainer, TrainingArguments
+ 
+print(" Transformers imported successfully")
+
+ 
+model='distilbert-base-uncased'
+
+tokenizer=AutoTokenizer.from_pretrained(model)
+ 
+
+##########virtual environment creation##################
+conda create --prefix ./env python==3.11 -y 
+source activate ./env
+conda activate C:\Users\graju\OneDrive\Desktop\LLM\env
+
+
+######to install all libraries#########
+pip install -r requirements.txt
